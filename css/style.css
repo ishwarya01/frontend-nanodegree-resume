@@ -61,7 +61,6 @@ h5 {
 
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -76,7 +75,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -97,7 +95,6 @@ a {
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
-
 }
 
 #skills-h3 {
@@ -175,7 +172,8 @@ span {
 #lets-connect {
   text-align: center;
 }
-.image{
+
+.image {
  display: inline-block;
     margin-left: auto;
     margin-right: auto;

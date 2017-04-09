@@ -47,13 +47,13 @@ var projects = {
             "title": "Health Care Information System(ESIC)",
             "dates": "2011 - 2012",
             "description": "Employee State Insurance Corporation(ESIC) is one of the largest Insurance Corporations in India, which provides healthcare facility to all Insured patients. As part of ESIC plans to automate all departments and implement an Integrated Health Information System at ESIC Hospitals for medical services offered to patients.",
-            "images": []
+            "images": ["http://lorempixel.com/400/200/sports", "http://lorempixel.com/400/200/sports/1"]
         },
         {
             "title": "Microsoft Localization",
             "dates": "2010 - 2011",
             "description": "Office 2010 will be released into market in 37 Languages along with English. Testing of Localized Office applications with English as Reference and reporting the defects in Product Studio.",
-            "images": []
+            "images": ["images/location1.jpg"]
         },
         {
             "title": "Customer Relationship Management (CRM)",
@@ -98,7 +98,6 @@ bio.display = function() {
         $("#skills").append(formattedSkill);
     }
 };
-bio.display();
 
 work.display = function() {
     // create new div for work experience
@@ -116,7 +115,6 @@ work.display = function() {
         $(".work-entry:last").append(formattedDescription);
     }
 };
-work.display();
 
 projects.display = function() {
     if (projects.projects.length > 0) {
@@ -138,7 +136,6 @@ projects.display = function() {
         }
     }
 };
-projects.display();
 
 education.display = function() {
     // create new div for education
@@ -169,6 +166,10 @@ education.display = function() {
         $(".education-entry:last").append(formattedonUrl);
     }
 };
+
+bio.display();
+work.display();
+projects.display();
 education.display();
 // create new div for Map
 $("#mapDiv").append(googleMap);
